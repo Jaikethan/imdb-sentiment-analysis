@@ -1,3 +1,7 @@
+[![CI](https://github.com/Jaikethan/imdb-sentiment-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/Jaikethan/imdb-sentiment-analysis/actions)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-blue.svg)](https://jaikethan-imdb-sentiment-analysis-app-khxfcw.streamlit.app/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 # 🎬 IMDB Movie Review Sentiment Analysis (Mini Project)
 
 [Live demo](https://jaikethan-imdb-sentiment-analysis-app-khxfcw.streamlit.app/) • `TF-IDF + Logistic Regression` • **~89.8% accuracy**
