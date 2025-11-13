@@ -4,45 +4,134 @@
 
 # 🎬 IMDB Movie Review Sentiment Analysis (Mini Project)
 
-[Live demo](https://jaikethan-imdb-sentiment-analysis-app-khxfcw.streamlit.app/) • `TF-IDF + Logistic Regression` • **~89.8% accuracy**
+An end-to-end NLP project that classifies IMDB movie reviews as **positive** or **negative** using  
+**TF-IDF + Logistic Regression (Accuracy ~ 89.8%)**, deployed on **Streamlit Cloud**.
 
 ---
 
-## Overview
-This is a small end-to-end NLP mini project that classifies IMDB movie reviews as **positive** or **negative**. It demonstrates data cleaning, TF-IDF feature extraction, training a Logistic Regression model, evaluation, and deployment as an interactive Streamlit app.
+## 🚀 Live Demo  
+Try the deployed app here:  
+👉 **https://jaikethan-imdb-sentiment-analysis-app-khxfcw.streamlit.app/**
 
-**Key points**
-- Dataset: 50,000 IMDB reviews (Kaggle)  
-- Model: TF-IDF (uni+bi-grams, top 10k features) + Logistic Regression  
-- Deployed: Streamlit Cloud
+Paste any movie review and instantly see the result.
 
 ---
 
-## Live demo
-Try the app:  
-**https://jaikethan-imdb-sentiment-analysis-app-khxfcw.streamlit.app/**
+## 🧠 Overview
+This project demonstrates a complete classical NLP pipeline:
+
+- Text cleaning & preprocessing  
+- TF-IDF feature extraction (uni+bi-grams, top 10k features)  
+- Logistic Regression classifier  
+- Model evaluation (accuracy, F1-score, confusion matrix)  
+- Streamlit web app deployment  
+- Automated CI workflow using GitHub Actions  
 
 ---
 
-## Quick results
-- Train/Test split: **80% / 20%**  
-- Accuracy (logistic regression + TF-IDF): **~0.8981 (89.81%)**
+## 📊 Model Performance
+| Metric | Value |
+|--------|--------|
+| **Accuracy** | **89.81%** |
+| Model | Logistic Regression |
+| Features | TF-IDF (10,000 features) |
 
 ---
 
-## Files in this repo
-- `app.py` — Streamlit app (demo)  
-- `SentimentAnalysis.ipynb` — notebook used for training (cleaning, features, models)  
-- `IMDB Dataset.csv` — dataset (Kaggle) — optional to keep in repo  
-- `tfidf_vectorizer.joblib`, `sentiment_logreg.joblib` — saved model + vectorizer  
-- `requirements.txt` — runtime dependencies  
-- `README.md`, `LICENSE`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `.gitignore`
+## 📂 Files in This Repository
+```
+imdb-sentiment-analysis/
+│── app.py                     # Streamlit app
+│── IMDB Dataset.csv           # Dataset (optional to keep)
+│── tfidf_vectorizer.joblib    # Saved vectorizer
+│── sentiment_logreg.joblib    # Trained classifier
+│── requirements.txt           # Dependencies
+│── README.md
+│── LICENSE
+│── CONTRIBUTING.md
+│── CODE_OF_CONDUCT.md
+│── .gitignore
+│── .github/workflows/ci.yml   # CI pipeline
+└── notebooks/
+    └── SentimentAnalysis.ipynb
+```
 
 ---
 
-## How to run locally
+## 🛠 Run Locally (Developer Guide)
 
-1. Clone:
+### 1️⃣ Clone
 ```bash
 git clone https://github.com/Jaikethan/imdb-sentiment-analysis.git
 cd imdb-sentiment-analysis
+```
+
+### 2️⃣ Create Virtual Environment
+```bash
+python -m venv venv
+venv\Scripts\activate       # Windows
+# OR
+source venv/bin/activate    # Mac/Linux
+```
+
+### 3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Start App
+```bash
+streamlit run app.py
+```
+
+App opens at:  
+👉 http://localhost:8501
+
+---
+
+## 🧪 How It Works (Quick Summary)
+
+1. **Preprocessing**  
+   - Remove HTML, punctuation, extra whitespace  
+   - Lowercasing  
+   - Remove stopwords  
+
+2. **Feature Extraction**  
+   - TF-IDF (1-2 grams, 10k max features)
+
+3. **Model**  
+   - Logistic Regression (fast, strong baseline for text data)
+
+4. **Deployment**  
+   - Streamlit Cloud  
+   - GitHub Actions CI to check code quality  
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions!
+
+```bash
+git checkout -b feature/my-change
+```
+
+Steps:
+1. Fork repo  
+2. Create feature branch  
+3. Make changes  
+4. Commit & push  
+5. Open Pull Request  
+
+See **CONTRIBUTING.md** for details.
+
+---
+
+## 📄 License  
+This project is licensed under the **MIT License** — free for personal and commercial use.
+
+---
+
+## ⭐ Support  
+If you like this project, please **star the repo**!  
+It really helps. 😊
