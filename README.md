@@ -32,7 +32,7 @@ Try the app:
 - `IMDB Dataset.csv` — dataset (Kaggle) — optional to keep in repo  
 - `tfidf_vectorizer.joblib`, `sentiment_logreg.joblib` — saved model + vectorizer  
 - `requirements.txt` — runtime dependencies  
-- `README.md`, `LICENSE`, `CONTRIBUTING.md`, `.gitignore`
+- `README.md`, `LICENSE`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `.gitignore`
 
 ---
 
