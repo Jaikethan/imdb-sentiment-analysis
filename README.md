@@ -54,6 +54,7 @@ Columns:
   - Precision, Recall, F1-score
   - Confusion matrix (heatmap)
 
+---
 
 ## 📊 Confusion Matrix
 A seaborn heatmap is generated to show true vs predicted labels.
@@ -65,3 +66,71 @@ The notebook includes a helper function:
 
 ```python
 predict_review("This movie was amazing!")
+```
+
+Example output:
+
+```
+("positive", 0.97)
+```
+
+---
+
+## 💾 Saving the Model
+The trained model and TF-IDF vectorizer are saved using joblib:
+
+```
+sentiment_logreg.joblib
+tfidf_vectorizer.joblib
+```
+
+---
+
+## 💻 Optional Streamlit App
+A simple UI can be created using Streamlit to allow users to type a review and see the prediction.
+
+Run:
+```
+streamlit run app.py
+```
+
+---
+
+## 🛠️ Tech Stack
+- Python  
+- Jupyter Notebook  
+- Pandas  
+- Scikit-learn  
+- NLTK  
+- Matplotlib / Seaborn  
+- Streamlit (optional)
+
+---
+
+## 📁 Project Structure
+```
+campushire-dl-mini/
+│
+├── IMDB Dataset.csv
+├── SentimentAnalysis.ipynb
+├── sentiment_logreg.joblib
+├── tfidf_vectorizer.joblib
+├── app.py           # optional
+└── README.md
+```
+
+---
+
+## 📈 What I Learned
+- Basics of NLP preprocessing  
+- Working with TF-IDF features  
+- Training and evaluating ML models  
+- Saving/loading models  
+- Visualizing results  
+- Optional: building a small ML app with Streamlit  
+
+---
+
+## ✔️ Conclusion
+This mini project is a clean, end-to-end introduction to NLP sentiment analysis.  
+It is small enough for beginners, but complete enough to showcase on a resume or GitHub.
