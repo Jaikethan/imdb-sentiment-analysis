@@ -134,3 +134,9 @@ campushire-dl-mini/
 ## ✔️ Conclusion
 This mini project is a clean, end-to-end introduction to NLP sentiment analysis.  
 It is small enough for beginners, but complete enough to showcase on a resume or GitHub.
+
+## 🔗 Live Demo
+A live demo of the app is deployed on Streamlit Cloud:
+
+**Live app:** https://jaikethan-imdb-sentiment-analysis-app-khxfcw.streamlit.app/
+
